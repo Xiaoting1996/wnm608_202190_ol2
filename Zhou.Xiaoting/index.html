@@ -3,73 +3,417 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cool Website</title>	
-	<link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
+	<title>U's ED</title>	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://use.typekit.net/pdt7con.css">
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
 </head>
 <body>
 	
 <header class="navbar">
 	<div class="container display-flex">
-		<div class="flex-none">	
-			<h1>A</h1>
+		<div class="flex-stretch">	
+			<h1>U's ED</h1>
 		</div>
+			<div class="flex-stretch">
+			<input type="search" placeholder="Search" class="form-input">
+			</div>
 		<div class="flex-stretch"></div>
 <nav class="flex-none nav">
 		<ul class="container display-flex"> 
-			<li class="flex-stretch"><a href="article1">link 1</a></li>
-			<li class="flex-stretch"><a href="article2">link 2</a></li>
-			<li class="flex-stretch"><a href="article3">link 3</a></li>
-			<li class="flex-stretch"><a href="article4">link 4</a></li>
+			<li class="flex-stretch"><a href="#">Favorites</a></li>
+			<li class="flex-stretch"><a href="#">Cart</a></li>
+			<li class="flex-stretch"><a href="#">Oder Info</a></li>
+			<li class="flex-stretch"><a href="#">Account</a></li>
 		</ul>
 	</nav>
  </div>
 </header>
 
+<script>
+			const makeNav = (classes='') => {
+				const links = ['home','store','about']
+				document.write( `
+		<div>
+			<nav classes="${classes}">
+				<ul>
+					${links.reduce((r,o,i)=>{
+						return r+`<li><a href="#">${o}</a></li>`;
+					},'')}
+				</ul>
+			</nav>
+		</div>`);
+			}
+		</script>
 <div class="container">
-	<article class="article card soft" id="article1">
-		<div class="display-flex flex-align-center">
-			<div class="flex-stretch">
-				<h2>Article 1</h2>
+	<div class="card soft">
+<!--nav.nav>ul>li*4>a[href=#]>{Link $}-->
+	<nav class="nav nav-stretch">
+		<ul>
+			<li><a href="#top wear">Top Wear</a></li>
+			<li><a href="#pants">Pants</a></li>
+			<li><a href="#shoes">Shoes</a></li>
+			<li><a href="#decoration">Decoration</a></li>
+		</ul>
+	</nav>
+	</div>
+
+
+		<div class="card dark">
+			<h3>Daily Recommends</h3>
+			<div class="form-button-left">
+				<a href="#" class="form-button">More</a>
 			</div>
-			<div class="flex-none"><small>08:08pm</small></div>
 		</div>
-		<div class="article-body">
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil officiis quos, minima doloremque iste, numquam quam nostrum optio veritatis. Praesentium harum numquam est, molestias provident tempora at exercitationem eum, facilis deleniti, architecto! Blanditiis vel, totam optio, at minima modi?</p>
-			<p>Est ratione vitae voluptatem delectus hic dolore sunt tenetur odio, deserunt eum animi quibusdam repellat incidunt veniam impedit consequatur velit, optio architecto perferendis consequuntur dolorem accusamus in? Quae nisi odit esse, ipsa cumque pariatur, minima repellat perferendis. Maiores, velit, exercitationem.</p>
-			<p>Mollitia quis dolorem, enim ea excepturi ratione quas accusantium autem praesentium, ullam. Nihil soluta, molestias quo velit minus deleniti sit modi exercitationem laudantium numquam consequatur voluptate, aperiam, ipsum doloremque, cum in nisi. Ut dolorum consequatur aut earum adipisci fuga ab?</p>
+			<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
 		</div>
-	</article>
-	<article class="article card dark" id="article2">
-		<h2>Article 2</h2>
-		<div class="article-body">
-			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Cumque, nisi itaque velit quis quas ea fuga dolores. Corrupti natus exercitationem ex quisquam, inventore ea, suscipit temporibus excepturi ad. Nemo, et, aut. Voluptatem laboriosam vitae dignissimos veritatis corrupti doloremque voluptatibus quae?</p>
-			<p>Adipisci doloremque quis culpa fugit, modi odio quae veritatis labore numquam quod officia, at ratione ad explicabo? Veniam qui dolore sunt nobis, minima inventore? Accusamus quod, laudantium repellendus modi, cupiditate in alias voluptates cum unde sit, fuga tempore obcaecati natus!</p>
-			<p>Iste nemo facere corrupti eos explicabo, accusantium voluptas optio quisquam, est soluta ab? Amet, rem? Dicta vero aperiam quod assumenda libero voluptatem totam, neque consequuntur labore dolorum quisquam quas exercitationem expedita maiores itaque similique perspiciatis tenetur accusamus eum! Mollitia, quibusdam?</p>
-		</div>
-	</article>
-	</div>
-	<div class="view-window" style="background-image: url('img/Antelope Canyon.png')">
-		
-	</div>
-	<div class="container">
-	<article class="article" id="article3">
-		<h2>Article 3</h2>
-		<div class="article-body">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem id repudiandae vitae, totam deleniti ut tempora soluta a accusantium, porro, doloribus, consequatur error placeat dolores? Itaque eius iusto officia quasi a, qui voluptas debitis. Labore molestias impedit, atque accusamus.</p>
-			<p>Commodi, saepe, iusto! Ipsam, dolores consequuntur non saepe, maxime obcaecati earum nobis a! Nam, fuga amet sint quas quo rem rerum laudantium minima veritatis doloremque ratione aperiam aliquid quae ipsum assumenda dolorum. Ipsam et iusto asperiores consequuntur ea commodi nesciunt!</p>
-			<p>Iure, ex. Quas ullam nulla commodi, veritatis itaque libero alias soluta saepe, quod fuga ad illo ipsum. Asperiores necessitatibus aperiam debitis aliquid assumenda laborum praesentium laboriosam nisi magni neque. Illo ipsam quis officiis adipisci! Repellat nihil odio similique iusto itaque!</p>
-		</div>
-	</article>
-	<article class="article" id="article4">
-		<h2>Article 4</h2>
-		<div class="article-body">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Repudiandae, vel distinctio qui fugiat saepe quo asperiores eveniet sequi, quos possimus voluptatem minima repellat at nemo non dolor rem corporis eaque error accusantium praesentium, quasi, odit est amet adipisci! Illo, est!</p>
-			<p>Veniam enim est laboriosam, eaque exercitationem laborum nihil qui et magni adipisci illum odit temporibus alias deleniti cupiditate iusto dolor tempora repudiandae modi vel eveniet consequuntur? Eius minus dignissimos aspernatur, temporibus eligendi eum ducimus. Numquam corporis excepturi eos tempora assumenda.</p>
-			<p>Quaerat impedit optio architecto recusandae voluptatum sequi magni nisi libero, ratione totam, eligendi repellendus nesciunt, at laudantium. Molestias illum non eum odio dolor quo alias, aspernatur vel error aliquid expedita, animi excepturi accusamus delectus perspiciatis, rerum, doloribus ratione. Harum, temporibus.</p>
-		</div>
-	</article>
 </div>
+<div class="container" id="top wear">
+		<div class="card dark"><h2>Top Wear</h2>
+</div>
+			<div class="grid gap">
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+
+
+			<div class="card soft"><div class="form-button-left">
+				<a href="#" class="form-button">More</a>
+			</div></div>
+		</div>
+	</div>
+<div class="container" id="pants">
+		<div class="card dark"><h2>Pants</h2>
+</div>
+			<div class="grid gap">
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="card soft"><div class="form-button-left">
+				<a href="#" class="form-button">More</a>
+			</div></div>
+		</div>
+	</div>
+<div class="container" id="shoes">
+		<div class="card dark"><h2>Shose</h2>
+</div>
+			<div class="grid gap">
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="card soft"><div class="form-button-left">
+				<a href="#" class="form-button">More</a>
+			</div></div>
+		</div>
+	</div>
+<div class="container" id="decoration">
+		<div class="card dark"><h2>Decoration</h2>
+</div>
+			<div class="grid gap">
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+			<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				
+		<figure class="figure product">
+			<img src="https://via.placeholder.com/400x400?text=product" alt="">
+			<figcaption><div>product info</div>
+				<div>product price</div></figcaption>
+		</figure>
+			</div>
+			<div class="card soft"><div class="form-button-left">
+				<a href="#" class="form-button">More</a>
+			</div></div>
+		</div>
+	</div>
 
 </body>
 </html>
