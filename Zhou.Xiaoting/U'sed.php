@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>U's ED</title>	
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link rel="stylesheet" href="https://use.typekit.net/pdt7con.css">
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
@@ -19,7 +17,7 @@
 
 <script>
 			const makeNav = (classes='') => {
-				const links = ['home','store','about']
+				const links = ['Favorites','Cart','Oder Info','Account']
 				document.write( `
 		<div>
 			<nav classes="${classes}">
@@ -57,8 +55,9 @@
 				
 		<figure class="figure product">
 			<img src="https://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption><div>product info</div>
-			<div>product price</div></figcaption>
+			<figcaption><div class="form-button-left">
+				<a href="product_list.php" class="form-button">More Info</a>
+			</div></figcaption>
 		</figure>
 			</div>
 			<div class="col-xs-12 col-md-4">
